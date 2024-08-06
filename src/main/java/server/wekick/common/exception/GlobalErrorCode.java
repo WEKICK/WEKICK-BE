@@ -31,6 +31,13 @@ public enum GlobalErrorCode implements BaseErrorCode {
     // GLOBAL + Args Validation Error
     BAD_ARGS_ERROR(BAD_REQUEST, "GLOBAL400_1", "request body의 validation이 실패했습니다. 응답 body를 참고해주세요"),
 
+    // GLOBAL + 400 BAD_REQUEST - 파라미터 오류
+    BAD_PARAMS_ERROR(BAD_REQUEST, "GLOBAL400_2", "request parameter가 없거나 유효하지 않습니다."),
+
+    // GLOBAL + 404 NOT FOUND - 경로 오류
+    GLOBAL_NOT_FOUND(NOT_FOUND, "GLOBAL404_1", "경로가 올바르지 않습니다."),
+
+
     // USER + 400 BAD_REQUEST - 잘못된 요청
     NOT_VALID_PHONE_NUMBER(BAD_REQUEST, "USER400_1", "유효하지 않은 전화번호 입니다."),
 
