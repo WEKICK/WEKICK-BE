@@ -3,7 +3,6 @@ package server.wekick.memerRank.dto;
 import java.util.List;
 
 public class MemberRankResponse {
-
     private int page;
     private int pageSize;
     private int totalPages;
