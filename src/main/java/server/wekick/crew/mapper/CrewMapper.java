@@ -2,7 +2,7 @@ package server.wekick.crew.mapper;
 
 import server.wekick.crew.entity.Crew;
 
-public class CrewMappper {
+public class CrewMapper {
 
     public static Crew toCrew() {
         return Crew.builder()
