@@ -3,6 +3,8 @@ package server.wekick.member.dto;
 import lombok.Getter;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
+import server.wekick.member.entity.PreferredStyle;
+
 import java.util.List;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
