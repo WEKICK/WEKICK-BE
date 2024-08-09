@@ -6,10 +6,18 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class AuthRequestDto {
+
     @Getter
     public class TermsConsentDto {
         private Long memberId;
         private String email;
         private Boolean serviceTerms;
     }
+
+    @Getter
+    public class checkNicknameDto {
+        private Boolean isAvailable;
+    }
+
+
 }
