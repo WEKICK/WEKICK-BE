@@ -1,16 +1,16 @@
-package server.wekick.memerRank.dto;
+package server.wekick.crewRank.dto;
 
 import java.util.List;
 
-public class MemberRankResponse {
+public class CrewRankResponse {
     private String type;
     private int page;
     private int pageSize;
     private int totalPages;
     private int totalRecords;
-    private List<Member> members;
+    private List<Crew> crew;
 
-    public String getType() {return type; }
+    public String getType() { return type;}
 
     public void setType(String type) { this.type = type;}
 
@@ -46,39 +46,29 @@ public class MemberRankResponse {
         this.totalRecords = totalRecords;
     }
 
-    public List<Member> getMembers() {
-        return members;
+    public List<Crew> getMembers() {
+        return crew;
     }
 
-    public void setMembers(List<Member> members) {
-        this.members = members;
+    public void setMembers(List<Crew> crew) {
+        this.crew = crew;
     }
 
-    public static class Member {
-        private String userId;
-        private String userName;
+    public static class Crew {
+        private String crewName;
         private int rankScore;
 
-        public Member(String userId, String userName, int rankScore) {
-            this.userId = userId;
-            this.userName = userName;
+        public Crew(String crewName, int rankScore) {
+            this.crewName = crewName;
             this.rankScore = rankScore;
         }
 
-        public String getUserId() {
-            return userId;
-        }
-
-        public void setUserId(String userId) {
-            this.userId = userId;
-        }
-
         public String getUserName() {
-            return userName;
+            return crewName;
         }
 
         public void setUserName(String userName) {
-            this.userName = userName;
+            this.crewName = crewName;
         }
 
         public int getRankScore() {

@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import server.wekick.common.CommonResponse;
 import server.wekick.common.exception.GeneralException;
 import server.wekick.common.exception.GlobalErrorCode;
+import server.wekick.crewRank.dto.CrewRankResponse;
 import server.wekick.crewRank.service.CrewRankService;
 
 import java.util.Arrays;
@@ -35,7 +36,7 @@ public class CrewRankController {
     public CommonResponse getCrewRank(@PathVariable("type") String type, @RequestParam(value = "page", required = false) Integer page) {
         validatePageParam(page);
         validateRankType(type);
-        String response = crewRankService.getCrewRank(type);
+        CrewRankResponse response = crewRankService.getCrewRank(type);
         return CommonResponse.onSuccess(response);
     }
 }
